@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyLinks - Content Creator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+</head>
+<body>
+  <header>
+    <h1 class="brand-name">MyLinks</h1>
+  </header>
+
+  <div class="content">
+    <div class="grid-container">
+      <a class="my-button" href="https://www.realfoodpower.com/">My Website</a>
+      <a class="my-button" href="https://www.realfoodpower.com/blog">My Recipe Blog</a>
+      <a class="my-button" href="https://www.realfoodpower.com/contact">Get in Touch with Me</a>
+    </div>
+    <div class="image-container">
+      <img src="https://static.wixstatic.com/media/1d8c3d_ea7cdfc1b024437ca218d9a28d5ae927~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90,enc_auto/1d8c3d_ea7cdfc1b024437ca218d9a28d5ae927~mv2.jpg" alt="Image 1">
+      <img src="https://static.wixstatic.com/media/1d8c3d_08f3706159fc44ad9188b3ecd366f33f~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90,enc_auto/1d8c3d_08f3706159fc44ad9188b3ecd366f33f~mv2.jpg" alt="Image 2">
+      <img src="https://static.wixstatic.com/media/1d8c3d_86d7baf98a8343dda83f642bd4bae00a~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90,enc_auto/1d8c3d_86d7baf98a8343dda83f642bd4bae00a~mv2.jpg" alt="Image 3">
+      <a class="my-button" href="#">These are some of my recipes</a>
+    </div>
+  </div>
+</body>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('https://static.wixstatic.com/media/1d8c3d_b6c2e2b1516541edb189d31a8a275d78~mv2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+  }
+
+  .brand-name {
+    font-size: 36px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to stack buttons and images in a column */
+    min-height: calc(100vh - 160px); /* Adjust height to center the content */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px); /* Adjust the column width as needed */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .my-button {
+    display: block;
+    padding: 16px 24px;
+    border-radius: 10px;
+    background-color: #62A36F;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #39B37E;
+    transition: background-color 0.3s ease;
+  }
+
+  .my-button:hover {
+    background-color: #51845C;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Images stacked in a column */
+    align-items: center;
+  }
+
+  img {
+    max-width: 292px;
+    height: 219px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+</style>
+</html>
